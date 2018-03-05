@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gestion de Parking</title>
+	<link rel="stylesheet" href="css/stylecc.css">
+	<link href="css/popup-box.css" rel="stylesheet" type="text/css" media="all" />
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Sign In And Sign Up Forms  Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+	</script><script src="js/jquery.min.js"></script>
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/modernizr.custom.53451.js"></script> 
+ <script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+</script>	
+		
+</head>
+<body>
+	<h1>Gestion de Parkings | Chef de Département</h1>
+	<div class="w3layouts">
+		<div class="signin-agile">
+			<h2>Connectez vous</h2>
+			<form action="#" method="post">
+				<input type="text" name="name" class="name" placeholder="Nom d'utilisateur" required="">
+				<input type="password" name="password" class="password" placeholder="Mot de passe" required="">
+				<ul>
+					<li>
+						<input type="checkbox" id="brand1" value="">
+						<label for="brand1"><span></span>Se souvenir de moi</label>
+					</li>
+				</ul>
+				<a href="#">mot de passe oublié?</a><br>
+				<div class="clear"></div>
+				<input type="submit" value="Connexion">
+			</form>
+		</div>
+		<div class="signup-agileinfo">
+			<h3>Vous n'avez pas de compte?</h3>
+			<p>Veuillez cliquer sur le bouton ci-dessous et remplir les champs du formulaire pour fournir informations nécessaires à votre inscription à la plateforme. </p>
+			<div class="more">
+				<a class="book popup-with-zoom-anim button-isi zoomIn animated" data-wow-delay=".5s" href="#small-dialog">Inscription</a>				
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="footer-w3l">
+		<p class="agileinfo"> Cliquez ici si vous voulez vous connecter en tant que  <a href="indexg.html">Gestionnaire.</a></p>
+	</div>
+	<div class="pop-up"> 
+	<div id="small-dialog" class="mfp-hide book-form">
+		<h3>Inscription</h3>
+			<form action="verifInscription.php" method="post" onsubmit="return check_all()">
+					  <input type="text" name="nom" placeholder="Nom" onkeyup="nom_verif()" 
+                             required=" ">
+                        <input type="text" name="prenom" placeholder="Prénom" onkeyup="prenom_verif()" 
+                             required=" ">
+                        <input type="text" name="email" placeholder="Email" onkeyup="mail()" required=" ">
+					  <input type="password" name="Password" placeholder="mot de passe" onkeyup="mdp()" required=" ">
+					  <input type="password" name="Password1" placeholder="Confirmer mot de passe" onkeyup="verif_mdp()" required=" ">
+					  <input type="submit" value="s'enregistrer">
+					</form>
+	</div>
+</div>	
+</body>
+</html>

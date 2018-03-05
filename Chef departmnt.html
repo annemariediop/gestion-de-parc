@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Flight Booking Form a Flat Responsive Widget Template :: w3layouts </title>
+	<!-- Meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="application/x-javascript">
+		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+	</script>
+	<!-- Meta tags -->
+	<!--stylesheets-->
+	<link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+	<!--//style sheet end here-->
+	<!-- Calendar -->
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<!-- //Calendar -->
+	<link href="css/wickedpicker.css" rel="stylesheet" type='text/css' media="all" />
+	<!-- Time-script-CSS -->
+
+	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+</head>
+
+<body>
+	<h1 class="header-w3ls">
+		Gestion de Parkings</h1>
+	<div class="appointment-w3">
+		<form action="#" method="post">
+			<div class="personal">
+				<h2>Informations Conducteur</h2>
+				<div class="main">
+					<div class="form-left-w3l">
+
+						<input type="text" class="top-up" name="name" placeholder="Prenom" required="">
+					</div>
+					<div class="form-right-w3ls ">
+
+						<input type="text" class="top-up" name="last name" placeholder="Nom" required="">
+						<div class="clearfix"></div>
+					</div>
+
+				</div>
+				<div class="main">
+					<div class="form-left-w3l">
+
+						<input type="email" name="email" placeholder="Email" required="">
+					</div>
+					<div class="form-right-w3ls ">
+
+						<input class="buttom" type="text" name="number" placeholder="Numero" required="">
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="information">
+				<h3>Informations Vehicules</h3>
+				
+                <div class="main">
+					<div class="form-left-w3l">
+
+						<input type="text" name="Imma" placeholder="Immatriculation" required="">
+					</div>
+					<div class="form-right-w3ls ">
+
+						<input type="text" name="Deprtmnt" placeholder="Departement" required="">
+						<div class="clearfix"></div>
+					</div>
+				</div>
+                
+                <div class="main">
+					<div class="form-left-w3l">
+
+						<input type="text" name="modele" placeholder="modele" required="">
+					</div>
+                    
+					<div class="form-right-w3ls ">
+
+						<input type="text" name="marque" placeholder="marque" required="">
+						<div class="clearfix"></div>
+					</div>
+				</div>
+                
+				<div class="main">
+					<div class="form-left-w3l">
+						<input type="text" name="Serv" placeholder="Date mise en service" required="">
+					</div>
+                    
+					<div class="form-right-w3ls">
+						<input id="datepicker1" name="Tech" type="text" placeholder="Date visite Technique &" required="">
+
+						<input type="text" id="timepicker1" name="Time" class="timepicker1 form-control hasWickedpicker" placeholder="Heure" required=""
+						 onkeypress="return false;">
+						<div class="clear"></div>
+					</div>
+				</div>
+                
+				<div class="main">
+					<div class="form-left-w3l">
+						<input type="text" name="Serv" placeholder="Numero Conducteur" required="">
+					</div>
+					<div class="form-right-w3ls">
+						<select class="form-control">
+					<option value="">Etat vehicule</option>
+						<option>Bon</option>
+					<option>Passable</option>
+					<option>Mediocre</option>
+					<option>Vetuste</option>
+					</select>
+					</div>
+				</div>
+
+			</div>
+			<div class="passport">
+				<h3>Commentaire</h3>
+			</div>
+			<div class="form-control-w3l">
+				<textarea name="Message" placeholder="Toute Information supplémentaire..."></textarea>
+			</div>
+			<div class="btnn">
+				<input type="submit" value="Enregistrer">
+			</div>
+            <div class= "btnn">
+				<input type="submit" value="Importer Fichier">
+			</div>
+		</form>
+	</div>
+	<div class="copy">
+		<p>&copy;2018 Gestion de Parking. All Rights Reserved | Design by <a href="#" target="_blank">Ecole Supérieure Polytechnique</a></p>
+	</div>
+	<!-- js -->
+	<script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+	<!-- //js -->
+	<!-- Calendar -->
+	<script src="js/jquery-ui.js"></script>
+	<script>
+		$(function () {
+			$("#datepicker,#datepicker1,#datepicker2,#datepicker3").datepicker();
+		});
+	</script>
+	<!-- //Calendar -->
+	<!-- Time -->
+	<script type="text/javascript" src="js/wickedpicker.js"></script>
+	<script type="text/javascript">
+		$('.timepicker,.timepicker1').wickedpicker({ twentyFour: false });
+	</script>
+	<!-- //Time -->
+
+</body>
+
+</html>
